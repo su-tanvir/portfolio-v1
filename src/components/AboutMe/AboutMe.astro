@@ -1,0 +1,61 @@
+---
+import authorPrim from "../../assets/img/tanvir-primary.webp";
+import authorSec from "../../assets/img/tanvir-secondary.webp";
+import Github from "../../assets/svg/github.astro";
+import LinkedIn from "../../assets/svg/linkedIn.astro";
+import Mail from "../../assets/svg/mail.astro";
+import styles from "./styles.module.css";
+---
+
+<section id="intro" class={styles.root}>
+  <div class={styles.wrapper}>
+    <div class={styles.content}>
+      <div class={styles.contact}>
+        <a
+          aria-label="LinkedIn"
+          class={styles.icon}
+          href="https://www.linkedin.com/in/tanvirhosu"
+          target="_blank"
+        >
+          <LinkedIn />
+        </a>
+        <a
+          aria-label="Github"
+          class={styles.icon}
+          href="https://www.github.com/su-tanvir"
+          target="_blank"
+        >
+          <Github />
+        </a>
+        <a
+          aria-label="Email"
+          class={styles.icon}
+          href="mailto:dev.tanvirhosu@gmail.com"
+        >
+          <Mail />
+        </a>
+      </div>
+
+      <div class={styles.profile}>
+        <img src={authorPrim} alt="Tanvir" />
+        <img src={authorSec} alt="Tanvir" />
+      </div>
+
+      <div class={styles.detalles}>
+        <h2 class={styles.name}>Tanvir Hossain</h2>
+        <p class={styles.profession}>Software developer based in Spain</p>
+        <p class={styles.description}>
+          4+ years of experience in web development.
+        </p>
+        <p class={styles.description}>
+          Specialized as a <strong>React developer</strong> and <strong
+            >PHP developer</strong
+          >.
+        </p>
+        <p class={styles.description}>
+          In love with UX, performance, clean code-architecture and security.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>

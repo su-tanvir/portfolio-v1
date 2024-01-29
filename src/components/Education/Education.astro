@@ -1,0 +1,15 @@
+---
+import data from "../../data/education.json";
+import type { Education } from "../../types/types";
+import TabsWithContent from "../TabsWithContent/TabsWithContent";
+import styles from "./styles.module.css";
+
+const education = data as Education[];
+---
+
+<section id="education" class={styles.root}>
+  <div class={styles.wrapper}>
+    <h3 class={styles.title}># Education and awards</h3>
+    <TabsWithContent data={education} style="isSecondary" client:visible />
+  </div>
+</section>

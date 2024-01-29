@@ -1,0 +1,71 @@
+---
+import Cloud from "../../assets/svg/cloud.astro";
+import Database from "../../assets/svg/database.astro";
+import Docker from "../../assets/svg/docker.astro";
+import Git from "../../assets/svg/git.astro";
+import Jira from "../../assets/svg/jira.astro";
+import React from "../../assets/svg/react.astro";
+import Sass from "../../assets/svg/sass.astro";
+import Services from "../../assets/svg/services.astro";
+import Symfony from "../../assets/svg/symfony.astro";
+import styles from "./styles.module.css";
+---
+
+<section id="skills" class={styles.root}>
+  <div class={styles.wrapper}>
+    <h3 class={styles.title}># Skills</h3>
+
+    <div class={styles.skills}>
+      <div class={styles.skillGroup}>
+        <div class={styles.skill}>
+          <Git />
+          <p>Git</p>
+        </div>
+      </div>
+
+      <div class={styles.skillGroup}>
+        <div class={styles.skill}>
+          <Symfony />
+          <p>Symfony</p>
+        </div>
+        <div class={styles.skill}>
+          <Database />
+          <p>MySQL</p>
+        </div>
+      </div>
+
+      <div class={styles.skillGroup}>
+        <div class={styles.skill}>
+          <Sass />
+          <p>Sass</p>
+        </div>
+        <div class={styles.skill}>
+          <React />
+          <p>React</p>
+        </div>
+        <div class={styles.skill}>
+          <Services />
+          <p>API services</p>
+        </div>
+      </div>
+
+      <div class={styles.skillGroup}>
+        <div class={styles.skill}>
+          <Docker />
+          <p>Docker</p>
+        </div>
+        <div class={styles.skill}>
+          <Cloud />
+          <p>Cloud platform</p>
+        </div>
+      </div>
+
+      <div class={styles.skillGroup}>
+        <div class={styles.skill}>
+          <Jira />
+          <p>Jira</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

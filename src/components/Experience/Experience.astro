@@ -1,0 +1,15 @@
+---
+import data from "../../data/experience.json";
+import type { Experience } from "../../types/types";
+import TabsWithContent from "../TabsWithContent/TabsWithContent";
+import styles from "./styles.module.css";
+
+const experience = data as Experience[];
+---
+
+<section id="experience" class={styles.root}>
+  <div class={styles.wrapper}>
+    <h3 class={styles.title}># Experience</h3>
+    <TabsWithContent data={experience} style="isPrimary" client:visible />
+  </div>
+</section>
