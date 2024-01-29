@@ -1,0 +1,65 @@
+---
+import Menu from "../../assets/svg/menu.astro";
+import "./styles.css";
+---
+
+<header class="root" id="header">
+  <nav class="nav">
+    <a aria-label="Home" class="nav__logo" href=".">tanvirhosu</a>
+
+    <button aria-label="Menubar" type="button" class="nav__menubar">
+      <Menu />
+    </button>
+
+    <div class="nav__menu">
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a aria-label="Home" href="#intro" class="nav__link">#home</a>
+        </li>
+        <li class="nav__item">
+          <a aria-label="Experience" href="#experience" class="nav__link"
+            >#experience</a
+          >
+        </li>
+        <li class="nav__item">
+          <a aria-label="Education" href=" #education" class="nav__link"
+            >#education</a
+          >
+        </li>
+        <li class="nav__item">
+          <a aria-label="Projects" href=" #projects" class="nav__link"
+            >#projects</a
+          >
+        </li>
+        <li class="nav__item">
+          <a aria-label="Skills" href="#skills" class="nav__link">#skills</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+<script>
+  const navMenubar = document.querySelector<HTMLElement>(".nav__menubar"),
+    navMenu = document.querySelector<HTMLElement>(".nav__menu");
+
+  if (navMenubar && navMenu) {
+    navMenubar.addEventListener("click", () => {
+      // toogle interaction
+      // let display = navMenu.style.display;
+      // if (!display || display === "none") display = "block";
+      // else display = "none";
+      // navMenu.style.display = display;
+      navMenu.classList.toggle("isVisible");
+      navMenubar.classList.toggle("isOpen");
+    });
+  }
+
+  const navLinks = document.querySelectorAll(".nav__link");
+  navLinks.forEach((anchor) =>
+    anchor.addEventListener("click", () => {
+      navMenu?.classList.remove("isVisible");
+      navMenubar?.classList.remove("isOpen");
+    })
+  );
+</script>

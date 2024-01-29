@@ -1,0 +1,13 @@
+---
+import FeaturedProjects from "./FeaturedProjects";
+import TopProjects from "./TopProjects.astro";
+import styles from "./styles.module.css";
+---
+
+<section id="projects" class={styles.root}>
+  <div class={styles.wrapper}>
+    <h3 class={styles.title}># Side projects</h3>
+    <TopProjects />
+    <FeaturedProjects />
+  </div>
+</section>

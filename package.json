@@ -1,0 +1,34 @@
+{
+  "name": "portfolio-v1",
+  "description": "Tanvir Hossain's portfolio build with Astro framework",
+  "version": "1.0.0",
+  "author": "Tanvir Hossain",
+  "homepage": "https://tanvirhosu.vercel.app",
+  "license": "MIT",
+  "engines": {
+    "node": ">=16.17.0",
+    "npm": ">=8.15.0"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "eslint": "eslint --ext .js,.ts,.astro src"
+  },
+  "dependencies": {
+    "@astrojs/react": "2.2.1",
+    "@types/react": "18.2.17",
+    "@types/react-dom": "18.2.7",
+    "astro": "2.9.0",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "@typescript-eslint/parser": "6.1.0",
+    "eslint": "8.45.0",
+    "eslint-plugin-astro": "0.27.2"
+  }
+}

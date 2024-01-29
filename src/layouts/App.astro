@@ -1,0 +1,53 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    >
+    <meta name="generator" content={Astro.generator}>
+    <title>{title}</title>
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+
+    <!-- HTML Meta Tags -->
+    <meta name="title" content={title}>
+    <meta name="description" content={description}>
+    <meta name="author" content="Tanvir Hossain">
+    <meta name="keywords" content="website, portfolio">
+    <meta name="audience" content="Everyone">
+
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content={title}>
+    <meta property="og:description" content={description}>
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://tanvirhosu.vercel.app/">
+    <meta property="og:image" content="/app-desktop.webp">
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:title" content={title}>
+    <meta name="twitter:description" content={description}>
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="tanvirhosu.vercel.app">
+    <meta property="twitter:url" content="https://tanvirhosu.vercel.app/">
+    <meta name="twitter:image" content="/app-desktop.webp">
+    <meta name="twitter:site" content="@htanvir17">
+    <meta name="twitter:creator" content="@htanvir17">
+  </head>
+
+  <body>
+    <slot />
+  </body>
+</html>

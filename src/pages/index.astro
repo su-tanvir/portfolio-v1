@@ -1,0 +1,22 @@
+---
+import AboutMe from "../components/AboutMe/AboutMe.astro";
+import Education from "../components/Education/Education.astro";
+import Experience from "../components/Experience/Experience.astro";
+import Projects from "../components/Projects/Projects.astro";
+import Skills from "../components/Skills/Skills.astro";
+import App from "../layouts/App.astro";
+import Layout from "../layouts/Layout.astro";
+---
+
+<App
+  title="Tanvir Hossain | Software developer"
+  description="The personal site of Tanvir Hossain"
+>
+  <Layout>
+    <AboutMe />
+    <Experience />
+    <Education />
+    <Projects />
+    <Skills />
+  </Layout>
+</App>

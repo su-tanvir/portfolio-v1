@@ -1,0 +1,13 @@
+---
+import Footer from "../components/Footer/Footer.astro";
+import Header from "../components/Header/Header.astro";
+import Main from "./Main.astro";
+---
+
+<Fragment>
+  <Header />
+  <Main>
+    <slot />
+  </Main>
+  <Footer />
+</Fragment>

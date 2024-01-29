@@ -1,0 +1,46 @@
+---
+import AstroIcon from "../../assets/svg/astro.astro";
+import Github from "../../assets/svg/github.astro";
+import LinkedIn from "../../assets/svg/linkedIn.astro";
+import Logo from "../../assets/svg/logo.astro";
+import Mail from "../../assets/svg/mail.astro";
+import styles from "./styles.module.css";
+---
+
+<footer class={styles.root}>
+  <div class={styles.wrapper}>
+    <Logo />
+    <q>The only way to do great work is to love what you do</q>
+    <div class={styles.contact}>
+      <a
+        aria-label="LinkedIn"
+        class={styles.icon}
+        href="https://www.linkedin.com/in/tanvirhosu"
+        target="_blank"
+      >
+        <LinkedIn />
+      </a>
+      <a
+        aria-label="Github"
+        class={styles.icon}
+        href="https://www.github.com/su-tanvir"
+        target="_blank"
+      >
+        <Github />
+      </a>
+      <a
+        aria-label="Email"
+        class={styles.icon}
+        href="mailto:dev.tanvirhosu@gmail.com"
+      >
+        <Mail />
+      </a>
+    </div>
+    <p>
+      Developed by Tanvir Hossain with
+      <a aria-label="Astrojs" href="https://astro.build" target="_blank">
+        <AstroIcon />
+      </a>
+    </p>
+  </div>
+</footer>
